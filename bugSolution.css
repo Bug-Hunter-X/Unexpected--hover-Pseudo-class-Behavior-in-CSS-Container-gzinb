@@ -1,0 +1,9 @@
+The correct way to target only the `.container` element on hover is to be more specific in the selector:
+
+```css
+.container:hover {
+  background-color: lightblue;
+}
+```
+
+By placing the `:hover` pseudo-class directly after the `.container` class selector, we ensure that the style is only applied to the container itself when it is hovered, preventing unintended styling of its children.
