@@ -1,0 +1,9 @@
+The following CSS rule unintentionally targets elements within the `.container` class that also have the `:hover` pseudo-class applied:
+
+```css
+.container :hover {
+  background-color: lightblue;
+}
+```
+
+This rule will also style any other elements within the `.container` that are hovered, not just the `.container` element itself.  This behavior can be unexpected and lead to styling issues.
